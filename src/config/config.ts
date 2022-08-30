@@ -13,13 +13,13 @@ export const config = {
     'secret': ' '
   },
   'prod': {
-    'username': 'produdagramestdb',
-    'password': 'produdagramestdb',
-    'database': 'produdagramestdb',
+    'username': process.env.PROD_USERNAME,
+    'password': process.env.PROD_PASSWORD,
+    'database': process.env.PROD_DATABASE,
     'aws_region': 'us-east-1',
-    'aws_profile': 'default',
-    'host': 'produdagramestdb.cxuwxqxkd8jb.us-east-1.rds.amazonaws.com',
-    'dialect': 'postgres',
-    'aws_media_bucket': 'udagram-estelle-s3-prod'
+    'aws_profile': process.env.PROD_PROFILE,
+    'host': process.env.PROD_HOST,
+    'dialect': process.env.PROD_DIALECT,
+    'aws_media_bucket': process.env.PROD_AWS_MEDIA_BUCKET
   }
 };
